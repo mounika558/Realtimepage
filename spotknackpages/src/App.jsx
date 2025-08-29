@@ -21,7 +21,7 @@ const App = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Valueformoney" className="hover:text-yellow-300">
+            <Link to="/ValueForMoney" className="hover:text-yellow-300">
               Value for Money
             </Link>
           </li>
@@ -33,7 +33,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Momentspage />} />
           <Route path="/process" element={<Process />} />
-          <Route path="/Valueformoney" element={<ValueForMoney />} />
+          <Route path="/ValueForMoney" element={<ValueForMoney />} />
         </Routes>
       </div>
     </Router>
