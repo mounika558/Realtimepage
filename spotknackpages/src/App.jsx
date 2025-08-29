@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import ValueForMoney from './components/valueformoney'
+import ValueForMoney from './components/ValueForMoney'
 import Momentspage from './pages/Momentspage'
 import Process from './pages/process'
 
