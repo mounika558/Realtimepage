@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Index = () => {
-  const url = "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/json_contents/happymoments.json";
+  const url = "http://localhost:3000/selfiebooth";
   const [frames, setFrames] = useState([]);
 
   const bgcolor = ['#FFA500', '#2196F3', '#FFD700', '#000000']; 

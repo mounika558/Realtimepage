@@ -1,0 +1,43 @@
+{
+  "selfiebooth": [
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/1.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/2.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/3.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/4.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/5.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/6.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/7.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/8.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/9.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/10.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/11.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/12.webp"
+    },
+    {
+      "pic_url": "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/13.webp"
+    }
+  ]
+}
