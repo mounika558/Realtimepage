@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-
+import Selfiebooth from '../../public/selfiebooth.json'
 const Index = () => {
-  const url = "http://localhost:3000/selfiebooth";
+  // const url = "http://localhost:3000/selfiebooth";
   const [frames, setFrames] = useState([]);
 
   const bgcolor = ['#FFA500', '#2196F3', '#FFD700', '#000000']; 
 
   useEffect(() => {
-    fetch(url)
+    fetch(Selfiebooth)
       .then(res => res.json())
       .then(data => {
         const firstEight = data.slice(0, 8).map((item, index) => ({
