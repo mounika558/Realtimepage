@@ -1,23 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import Selfiebooth from '../../public/selfiebooth.json'
+
 const Index = () => {
-  // const url = "http://localhost:3000/selfiebooth";
   const [frames, setFrames] = useState([]);
 
   const bgcolor = ['#FFA500', '#2196F3', '#FFD700', '#000000']; 
 
+  const selfiebooth = [
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/1.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/2.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/3.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/4.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/5.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/6.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/7.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/8.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/9.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/10.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/11.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/12.webp" },
+    { pic_url: "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/moments/13.webp" }
+  ];
+
   useEffect(() => {
-    fetch(Selfiebooth)
-      .then(res => res.json())
-      .then(data => {
-        const firstEight = data.slice(0, 8).map((item, index) => ({
-          image: item.pic_url,
-          backgroundColor: bgcolor[index % 4],
-          borderColor:bgcolor[index % 4]
-        }));
-        setFrames(firstEight);
-      })
-      .catch(err => console.error(err));
+    const firstEight = selfiebooth.slice(0, 8).map((item, index) => ({
+      image: item.pic_url,
+      backgroundColor: bgcolor[index % 4],
+      borderColor: bgcolor[index % 4]
+    }));
+    setFrames(firstEight);
   }, []);
 
   const getRotation = (index) => {
@@ -46,8 +56,7 @@ const Index = () => {
             <div
               key={index}
               className={`w-[180px] h-[220px] overflow-hidden bg-white shadow-md  ${extraStyle[index % extraStyle.length]}`}
-              style={{ border: `8px solid ${frame.borderColor}`,
-              backgroundColor:`${frame.backgroundColor}`}}
+              style={{ border: `8px solid ${frame.borderColor}`, backgroundColor: `${frame.backgroundColor}` }}
             >
               <img src={frame.image} className="w-full h-full object-cover" />
             </div>
