@@ -1,6 +1,6 @@
 import React from 'react';
 import SelfieBooth from "../../components/Selfiebooth"
-import Carousel from "../../components/carousel"
+import Carousel from "../../components/MomentsCarousel"
 const Index = () => {
   const firstMeetup = "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/meetups/6th+anniversary.webp";
   const learningMeetup = "https://s3.ap-south-1.amazonaws.com/data.spotknack.com/images/website/timeline/Oct62024.webp";
